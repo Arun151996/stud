@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</style>
+<body>
+    <div class="top">
+        <a href="{ % url 'hp' % } " style="color:aliceblue">Home</a> &nbsp;&nbsp;
+        <a href="{ % url 'co' % } " style="color:aliceblue">Courses</a> &nbsp;&nbsp;
+        <a href="{ % url 'cs' % } " style="color:aliceblue">Contact Us</a> &nbsp;&nbsp;
+        
+</div>
+    <div>
+        <img src="{% static 'baabtra.jpg' %}" width="250px">
+        
+        <img src="{% static 'register.jpg' %}" width="170px" align="right">
+        <img src="{% static 'lognow.jpg' %}" width="150px"align="right" >
+    </div>
+</body>
+</html>
