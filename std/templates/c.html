@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +8,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<style>
+    .top,a
+    {
+        background-color:black;
+        font-size: large;
+        color:white;
+        padding: 20px 40px;
+        position:sticky;
+        top:0;
+        text-decoration: none;
+        float:left;
+
+
+    }
+    .grida
+{
+    display: grid;
+    grid-template-columns:auto auto auto ;
+   
+}
+.gridb
+{
+
+ 
+    color: rgb(39, 38, 38);
     
-</body>
+    padding: 0 20px 0 20px;
+   
+}
+input[type="text"]
+{
+    width: 98%;
+}
+.div
+    { height:900px;
+        width:1200px;
+        background-color: blue;
+        overflow-x:hidden;
+        overflow-y:scroll;
+        opacity:1;
+        background-image:conic-gradient( red 0deg,red 90deg,black 90deg, black 180deg,blue 180deg, blue 270deg, yellow 270deg, yellow 360deg);
+        border-radius: 50%;
+       
+        
+
+    }
+    .ha{
+        position:fixed;
+    }
+    </style>
+
+<body>
+    <div class="top,a" >
+        <a href="{% url 'hp' %} " style="color:aliceblue">Home</a> &nbsp;&nbsp;
+        <a href="{% url 'co' %} " style="color:aliceblue">Courses</a> &nbsp;&nbsp;
+        <a href="{% url 'cs' %} " style="color:aliceblue">Contact Us</a> &nbsp;&nbsp;
+        
+</div>
+    <div>
+        <img src="{% static 'baabtra.jpg' %}" width="250px">
+        
+        <img src="{% static 'register.jpg' %}" width="170px" align="right">
+        <img src="{% static 'lognow.jpg' %}" width="150px"align="right" >
+    </div>
+   
+    <table border="1" align="center" width="50%">
+        <tr >
+            <th colspan="2">
+                <h2>Contact Us</h2>
+        
+            </th>
+            <tr>
+                <td width="50%"> Name</td> 
+                <td> <input type="text" width="100%"> </td>
+            </tr>
+            <tr>
+                <td width="50%"> Gender</td> 
+                <td> <input type="radio" name="dd">Male <input type="radio" name="dd">Female</td>
+                <tr>
+                    <td width="50%"> DOB</td> 
+                    <td> <input type="date" style="width: 98%;"> </td>
+                </tr>
+                <tr>
+                    <td width="50%"> Mobile</td> 
+                    <td> <input type="text"> </td>
+                </tr>
+                <tr>
+                    <td> Email</td> 
+                    <td> <input type="text" > </td>
+                </tr>
+                <tr>
+                    <td> Adress</td> 
+                    <td>
+                        <textarea name="" id="" cols="70" rows="10"></textarea>
+                    </td>
+                </tr>
+                
+                    
+
+        
+        
+            </tr>
+    <tr>
+
+        
+        
+    </tr>
+    
+        </tr>
+<tr>
+    <td colspan="2" align="right">
+        <br><br><button type="button" style="background-color:blue">Submit</button>
+    </td>
+</tr>
+    
+    </table>
+    <div class="grida" style="background-color: aqua;">
+        <div class="gridb">
+            <b>baabtra</b> <br>
+            <b>mentoring partner<b>
+        </div>
+        <div class="gridb">
+           <b>Email:info@baabta.com </b><br>
+            <b>phone: +91-8592058444 </b>
+        </div>
+
+        <div class="gridb">
+            <h3>Address:</h3>
+        </div>
+            </div>
+           <!-- <div class="div">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis sunt sequi, ipsum non vero? Laboriosam, nobis similique. Velit quisquam esse, consequuntur totam repudiandae adipisci natus qui perferendis est quasi.
+        </div> -->
+        
+ 
+</body> 
+
+
 </html>

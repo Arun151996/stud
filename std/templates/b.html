@@ -7,12 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .top{
+        background-color:black;
+        font-size: large;
+        color:white;
+        padding: 20px 40px;
+
+    }
+    .bt{
+        background-color: rgb(33, 77, 85);
+        padding: 20px 40px;
+    }
+    .bs{
+        background-color: rgb(21, 6, 56);
+        padding: 20px 40px;
+        color:white;
+        text-align: center;
+    }
+    .grida
+{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+   /* background-color: rgb(91, 91, 97);*/
+   
+}
+.gridb
+{
+
+ 
+    color: rgb(39, 38, 38);
+    
+    padding: 0 20px 0 20px;
+}
+#parada{
+    background-color: black;
+    color:white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 1% 1% ;
+    margin-top: 10px;
+}
+#para{
+    text-align: justify;
+}
+.ci{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
 </style>
 <body>
     <div class="top">
-        <a href="{ % url 'hp' % } " style="color:aliceblue">Home</a> &nbsp;&nbsp;
-        <a href="{ % url 'co' % } " style="color:aliceblue">Courses</a> &nbsp;&nbsp;
-        <a href="{ % url 'cs' % } " style="color:aliceblue">Contact Us</a> &nbsp;&nbsp;
+        <a href="{% url 'hp' %} " style="color:aliceblue">Home</a> &nbsp;&nbsp;
+        <a href="{% url 'co' %} " style="color:aliceblue">Courses</a> &nbsp;&nbsp;
+        <a href="{% url 'cs' %} " style="color:aliceblue">Contact Us</a> &nbsp;&nbsp;
         
 </div>
     <div>
@@ -21,5 +72,42 @@
         <img src="{% static 'register.jpg' %}" width="170px" align="right">
         <img src="{% static 'lognow.jpg' %}" width="150px"align="right" >
     </div>
-</body>
-</html>
+    <div id="parada">
+        <h2>Explore Our Intership Programme</h2>
+        <p id="para">An internship is an opportunity offered by an employer to potential employees, called interns, to work at a firm for a fixed period of time. Interns are usually undergraduates or students, and most internships last between a month and three months.</p>
+    </div>
+    <div class="grida">
+        <div class="gridb">
+    <img src="{% static 'py.png' %}" width="170px"  class="ci">
+        <h3 align="center" id="para" style="color:black" width="170">Python full stack development</h3>
+      </div>
+        <div class="gridb">
+            <img src="{% static 'php.png' %}" width="170px" class="ci">
+            <h3 align="center" id="para" style="color:black" width="300">PHP full stack development</h3>
+            </div>
+            <div class="gridb">
+                
+                <img src="{% static 'java.png' %}" width="200px"class="ci" >
+                <h3 align="center" id="para" style="color:black" width="300">Java full stack development</h3>
+                </div>
+                <div class="gridb">
+                    <img src="{% static 'flutter.jpg' %}" width="170" class="ci">
+                    <h3 align="center" id="para"style="color:black" width="300">Flutter full stack development</h3>
+                    </div>
+    </div>
+    <div class="grida" style="background-color: aqua;">
+        <div class="gridb">
+            <b>baabtra</b> <br>
+            <b>mentoring partner<b>
+        </div>
+        <div class="gridb">
+           <b>Email:info@baabta.com </b><br>
+            <b>phone: +91-8592058444 </b>
+        </div>
+        <div class="gridb">
+            <h3>Address:</h3> 
+            </div>
+            </div>
+            
+    </body>
+    </html>

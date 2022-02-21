@@ -39,13 +39,21 @@
     
     padding: 0 20px 0 20px;
 }
-
+#parada{
+    background-color: black;
+    color:white;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 1% 1% ;
+    border:border;
+}
+   
 </style>
 <body>
     <div class="top">
-        <a href="{ % url 'hp' % } " style="color:aliceblue">Home</a> &nbsp;&nbsp;
-        <a href="{ % url 'co' % } " style="color:aliceblue">Courses</a> &nbsp;&nbsp;
-        <a href="{ % url 'cs' % } " style="color:aliceblue">Contact Us</a> &nbsp;&nbsp;
+        <a href="{% url 'hp' %} " style="color:aliceblue">Home</a> &nbsp;&nbsp;
+        <a href="{% url 'co' %} " style="color:aliceblue">Courses</a> &nbsp;&nbsp;
+        <a href="{% url 'cs' %} " style="color:aliceblue">Contact Us</a> &nbsp;&nbsp;
         
 </div>
     <div>
@@ -57,12 +65,14 @@
     <div class="bt">
         <center>
         <h1 >SOFTWARE INTERNSHIP</h1>
-        <h3>PYTHON|PHP|JAVA|FLUTTER</h3>
-        <h2>call:8592058444 </h2> <br><br>
-    </center>
+        <h2>PYTHON|PHP|JAVA|FLUTTER</h2>
+        <h2>call:+91-8592058444 </h2>
+    </center> <br><br>
+    
         <img src="{% static 'bs.jpg' %}" width="550px"  > &nbsp;
         <img src="{% static 'lap.jpg' %}" width="550px"  >
-    </div> <br>
+    </div> 
+    <br>
     <div class="bs">
         <h1 >
             GETTING A SOFTWARE JOB IS SO EASY WITH OUR INTERNSHIP PROGRAM
