@@ -9,8 +9,7 @@
     <title>Document</title>
 </head>
 <style>
-    .top,a
-    {
+    .tp,a{
         background-color:black;
         font-size: large;
         color:white;
@@ -18,7 +17,7 @@
         position:sticky;
         top:0;
         text-decoration: none;
-        float:left;
+
 
 
     }
@@ -45,25 +44,49 @@ input[type="text"]
     { height:900px;
         width:1200px;
         background-color: blue;
-        overflow-x:hidden;
+       /* overflow-x:hidden;
         overflow-y:scroll;
         opacity:1;
         background-image:conic-gradient( red 0deg,red 90deg,black 90deg, black 180deg,blue 180deg, blue 270deg, yellow 270deg, yellow 360deg);
-        border-radius: 50%;
+        border-radius: 50%;*/
        
         
-
     }
     .ha{
         position:fixed;
     }
+    .main{
+        background-color: black;
+        height:700px;
+        width:700px;
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content:space-around ;
+
+    }
+    .box1{
+        background-color: blueviolet;
+        height:100px;
+        width:200px;
+    }
+    .box2{
+        background-color: rgb(43, 226, 125);
+        height:100px;
+        width:200px;
+       
+    }
+    .box3{
+        background-color: brown;
+        height:100px;
+        width:200px;
+    }
     </style>
 
 <body>
-    <div class="top,a" >
-        <a href="{% url 'hp' %} " style="color:aliceblue">Home</a> &nbsp;&nbsp;
-        <a href="{% url 'co' %} " style="color:aliceblue">Courses</a> &nbsp;&nbsp;
-        <a href="{% url 'cs' %} " style="color:aliceblue">Contact Us</a> &nbsp;&nbsp;
+    <div class="tp" >
+        <a href="{% url 'hp' %} " >Home</a> &nbsp;&nbsp;
+        <a href="{% url 'co' %} " >Courses</a> &nbsp;&nbsp;
+        <a href="{% url 'cs' %} " >Contact Us</a> &nbsp;&nbsp;
         
 </div>
     <div>
@@ -72,6 +95,7 @@ input[type="text"]
         <img src="{% static 'register.jpg' %}" width="170px" align="right">
         <img src="{% static 'lognow.jpg' %}" width="150px"align="right" >
     </div>
+    <h2 class="ha">hello</h2>
    
     <table border="1" align="center" width="50%">
         <tr >
@@ -141,6 +165,14 @@ input[type="text"]
            <!-- <div class="div">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis sunt sequi, ipsum non vero? Laboriosam, nobis similique. Velit quisquam esse, consequuntur totam repudiandae adipisci natus qui perferendis est quasi.
         </div> -->
+        <div class="main" >
+           <div class="box1">A</div>
+           <div class="box2">B</div>
+           <div class="box3">C</div>
+
+
+
+        </div>
         
  
 </body> 
